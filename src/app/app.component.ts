@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My-proje-app';
+  parentCount:number=0;
+
+addUser(){
+  this.parentCount+=1;
+}
+removeUser(){
+  if(this.parentCount>0)
+  this.parentCount-=1;
+
+}
 }
